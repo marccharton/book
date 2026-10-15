@@ -1,7 +1,4 @@
-<!doctype html>
-<html lang="fr">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Book Marc Charton</title>
 <meta name="description" content="Marc Charton, chef de projet technique et Product Owner à Toulouse. Réalisations, méthode, formations et parcours.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -71,6 +68,7 @@ p{margin:0}
 .case .side{display:flex;flex-direction:column;gap:10px}
 .case .when{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
 .case .client{font-family:var(--f-display);font-size:1.5rem;font-weight:700;line-height:1.1}
+.case .client a,.sechead h2 a{color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
 .case .post{font-size:.92rem;color:var(--accent);font-weight:600}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
 .tag{font-family:var(--f-mono);font-size:.7rem;padding:2px 8px;border-radius:5px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
@@ -188,6 +186,24 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
   .end{padding:28px 22px}
 }
 @media (prefers-reduced-motion:no-preference){.btn,.copy{transition:background .15s}}
+.zoom{display:flex;flex-direction:column;gap:22px}
+.wfig{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:22px;align-items:center}
+@media (max-width:820px){.wfig{grid-template-columns:1fr}}
+.wfig svg{width:100%;height:auto;display:block;border-radius:8px}
+.wfig h3{margin:0 0 4px}
+.wfig .tag2{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.wfig p{margin:6px 0 0;color:var(--muted);font-size:.93rem}
+.wfig .res{color:var(--ink);font-weight:600}
+.wf .bg{fill:var(--bg)} .wf .card{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+.wf .ln{fill:var(--line)} .wf .ink{fill:var(--ink)} .wf .mut{fill:var(--muted)} .wf .acc{fill:var(--accent)} .wf .accs{fill:var(--accent-soft)}
+.wf .stroke{fill:none;stroke:var(--line);stroke-width:1.5} .wf .dash{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:6 5}
+.wf text{font-family:inherit;font-size:11px;fill:var(--muted)} .wf text.t{fill:var(--ink);font-weight:700;font-size:13px} .wf text.w{fill:#fff;font-weight:600}
+.h1{fill:#e8f2e9}.h2{fill:#fbefc8}.h3{fill:#f9d6a8}.h4{fill:#f2a796}.h5{fill:#e56a5c}
+.plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.plist div{border-top:2px solid var(--line);padding-top:10px}
+.plist b{display:block;margin-bottom:2px}
+.plist span{color:var(--muted);font-size:.9rem}
+.wnote{font-size:.85rem;color:var(--muted)}
 </style>
 
 <div class="wrap">
@@ -202,7 +218,6 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
   <div class="contact">
     <div class="row"><span class="lbl">Email</span><span class="mail" id="mail1">marc.charton.pro@gmail.com</span><button class="copy" type="button" data-target="mail1">Copier</button></div>
     <div class="row"><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/marccharton/" target="_blank" rel="noopener">linkedin.com/in/marccharton</a></div>
-    <div class="row"><span class="lbl">GitHub</span><a href="https://github.com/marccharton" target="_blank" rel="noopener">github.com/marccharton</a></div>
     <div class="row"><span class="lbl">Site</span><a href="https://nocode-focus.com" target="_blank" rel="noopener">nocode-focus.com</a></div>
     <div class="row"><span class="lbl">Localisation</span><span>Toulouse (31), présentiel ou distanciel</span></div>
     <div class="cvlinks">
@@ -214,7 +229,7 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
 <section class="facts" aria-label="En bref">
   <div class="fact"><b>10+</b><span>ans de développement web, de l'ESN au SaaS</span></div>
   <div class="fact"><b>200+</b><span>apprenants accompagnés jusqu'aux titres RNCP</span></div>
-  <div class="fact"><b>10+</b><span>outils métiers conçus et livrés en premières versions chez PwC</span></div>
+  <div class="fact"><b>10+</b><span>outils métiers livrés en production chez PwC</span></div>
   <div class="fact"><b>6</b><span>formations conçues, de 14 h à 21 h chacune</span></div>
 </section>
 
@@ -283,22 +298,23 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
     <article class="case">
       <div class="side">
         <span class="when">Janvier 2024 à octobre 2025</span>
-        <span class="client">PwC France</span>
+        <span class="client"><a href="https://www.pwc.fr/fr.html" target="_blank" rel="noopener">PwC France</a></span>
         <span class="post">Développeur full stack produit, plateformes internes</span>
         <div class="tags"><span class="tag">Produit</span><span class="tag">Delivery</span><span class="tag">Design system</span></div>
       </div>
       <div class="main">
-        <h3>Concevoir et livrer plus de 10 outils métiers internes</h3>
-        <div class="field"><span class="k">Contexte</span><p>Besoins d'outils internes dans de nombreux métiers : RH, IT, juridique, RSE, IA. Une petite équipe produit, avec un UX designer, pour livrer vite des premières versions utilisables.</p></div>
+        <h3>Livrer plus de 10 outils métiers internes en production</h3>
+        <div class="field"><span class="k">Contexte</span><p>Besoins d'outils internes dans de nombreux métiers : RH, IT, juridique, RSE, IA. Une petite équipe produit, avec un UX designer, pour livrer vite des outils utilisés au quotidien par les équipes.</p></div>
         <div class="field"><span class="k">Mon rôle</span><p>Développement front et back, et lien avec les équipes métier, en autonomie, en binôme avec le design.</p></div>
         <div class="field"><span class="k">Actions</span><ul>
           <li>Recueil des besoins auprès des équipes métier et traduction en solutions concrètes</li>
+          <li>Reprise et stabilisation d'une application ratée par un prestataire externe (Risk Mapping), aujourd'hui commercialisée par PwC en marque blanche</li>
           <li>Conception et construction d'un design system structuré, partagé à l'équipe</li>
           <li>Développement des interfaces métiers à partir des maquettes Figma</li>
-          <li>Développement des API et de la logique back (FastAPI, Supabase)</li>
+          <li>Back : modélisation des données et logique métier en SQL dans Supabase (vues, fonctions, triggers), contrats d'API conçus avec le développeur FastAPI</li>
           <li>Tableaux de bord et exports automatiques (PowerPoint, PDF)</li>
         </ul></div>
-        <div class="field"><span class="k">Résultat</span><p class="result">Plus de 10 outils livrés en premières versions, en cycles courts, avec une base commune réutilisée d'un outil à l'autre.</p></div>
+        <div class="field"><span class="k">Résultat</span><p class="result">Plus de 10 outils livrés en production et utilisés par les équipes métier, en cycles courts, avec une base commune réutilisée d'un outil à l'autre.</p></div>
         <div class="field"><span class="k">Environnement</span><p class="stack">WeWeb · Supabase (vues, fonctions, triggers SQL) · Python / FastAPI · Chart.js · Jira · Git · Rancher / Kubernetes · Figma</p></div>
       </div>
     </article>
@@ -306,7 +322,7 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
     <article class="case">
       <div class="side">
         <span class="when">2024 à 2025</span>
-        <span class="client">PwC · Lab IA</span>
+        <span class="client"><a href="https://www.pwc.fr/fr.html" target="_blank" rel="noopener">PwC</a> · Lab IA</span>
         <span class="post">Développeur, cellule d'innovation</span>
         <div class="tags"><span class="tag">IA générative</span><span class="tag">MVP</span></div>
       </div>
@@ -392,6 +408,173 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
 
 <section>
   <div class="sechead">
+    <span class="eyebrow">Zoom PwC</span>
+    <h2>Ce que j'ai construit chez <a href="https://www.pwc.fr/fr.html" target="_blank" rel="noopener">PwC</a></h2>
+    <p>Une vingtaine de mois dans une petite équipe produit, plus de 10 outils livrés en production. Quatre d'entre eux en images ci-dessous, puis les autres.</p>
+  </div>
+  <div class="zoom">
+    <figure class="wfig"><svg class="wf" viewBox="0 0 640 400" role="img" aria-label="Wireframe d'une application de cartographie des risques : onglets, heatmap et registre">
+<rect class="bg" width="640" height="400"/>
+<rect class="card" x="12" y="12" width="616" height="56" rx="8"/>
+<text class="t" x="28" y="36">Cartographie des risques</text><text x="28" y="54">Campagne T3 · risques opérationnels</text>
+<rect class="accs" x="470" y="26" width="142" height="26" rx="13"/><text x="486" y="43" style="fill:var(--accent)">3 risques non traités</text>
+<g><text x="24" y="92">Sources</text><text x="88" y="92">Registre</text><text x="152" y="92" class="t" style="font-size:11px;fill:var(--accent)">Heatmap</text><rect class="acc" x="152" y="97" width="46" height="2.5"/><text x="216" y="92">Radar</text><text x="266" y="92">Plans d'action</text><text x="358" y="92">Fiche risque</text></g>
+<rect class="card" x="12" y="110" width="330" height="278" rx="8"/>
+<text class="t" x="28" y="134">Probabilité × impact</text>
+<g transform="translate(46,150)">
+<rect class="h2" x="0" y="0" width="54" height="42" rx="3"/><rect class="h3" x="56" y="0" width="54" height="42" rx="3"/><rect class="h4" x="112" y="0" width="54" height="42" rx="3"/><rect class="h5" x="168" y="0" width="54" height="42" rx="3"/><rect class="h5" x="224" y="0" width="54" height="42" rx="3"/>
+<rect class="h1" x="0" y="44" width="54" height="42" rx="3"/><rect class="h2" x="56" y="44" width="54" height="42" rx="3"/><rect class="h3" x="112" y="44" width="54" height="42" rx="3"/><rect class="h4" x="168" y="44" width="54" height="42" rx="3"/><rect class="h5" x="224" y="44" width="54" height="42" rx="3"/>
+<rect class="h1" x="0" y="88" width="54" height="42" rx="3"/><rect class="h1" x="56" y="88" width="54" height="42" rx="3"/><rect class="h2" x="112" y="88" width="54" height="42" rx="3"/><rect class="h3" x="168" y="88" width="54" height="42" rx="3"/><rect class="h4" x="224" y="88" width="54" height="42" rx="3"/>
+<rect class="h1" x="0" y="132" width="54" height="42" rx="3"/><rect class="h1" x="56" y="132" width="54" height="42" rx="3"/><rect class="h1" x="112" y="132" width="54" height="42" rx="3"/><rect class="h2" x="168" y="132" width="54" height="42" rx="3"/><rect class="h3" x="224" y="132" width="54" height="42" rx="3"/>
+<rect class="h1" x="0" y="176" width="54" height="42" rx="3"/><rect class="h1" x="56" y="176" width="54" height="42" rx="3"/><rect class="h1" x="112" y="176" width="54" height="42" rx="3"/><rect class="h1" x="168" y="176" width="54" height="42" rx="3"/><rect class="h2" x="224" y="176" width="54" height="42" rx="3"/>
+<circle cx="195" cy="22" r="7" style="fill:var(--ink)"/><circle cx="140" cy="65" r="7" style="fill:var(--ink)"/><circle cx="250" cy="108" r="7" style="fill:var(--ink)"/><circle cx="84" cy="152" r="7" style="fill:var(--ink)"/>
+</g>
+<text x="128" y="384">Impact →</text><text x="20" y="270" transform="rotate(-90 20 270)">Probabilité →</text>
+<rect class="card" x="352" y="110" width="276" height="278" rx="8"/>
+<text class="t" x="368" y="134">Registre des risques</text>
+<rect class="acc" x="368" y="146" width="244" height="24" rx="4"/><text class="w" x="378" y="162">Réf.   Catégorie      Risque        Top</text>
+<g><rect class="ln" x="378" y="184" width="30" height="8" rx="4"/><rect class="ln" x="420" y="184" width="70" height="8" rx="4"/><rect class="ln" x="502" y="184" width="70" height="8" rx="4"/><rect class="acc" x="588" y="181" width="13" height="13" rx="3"/>
+<rect class="ln" x="378" y="214" width="30" height="8" rx="4"/><rect class="ln" x="420" y="214" width="58" height="8" rx="4"/><rect class="ln" x="502" y="214" width="78" height="8" rx="4"/><rect class="acc" x="588" y="211" width="13" height="13" rx="3"/>
+<rect class="ln" x="378" y="244" width="30" height="8" rx="4"/><rect class="ln" x="420" y="244" width="66" height="8" rx="4"/><rect class="ln" x="502" y="244" width="60" height="8" rx="4"/><rect class="stroke" x="588" y="241" width="13" height="13" rx="3"/>
+<rect class="ln" x="378" y="274" width="30" height="8" rx="4"/><rect class="ln" x="420" y="274" width="52" height="8" rx="4"/><rect class="ln" x="502" y="274" width="74" height="8" rx="4"/><rect class="stroke" x="588" y="271" width="13" height="13" rx="3"/></g>
+<rect class="card" x="368" y="334" width="110" height="30" rx="6"/><text x="384" y="353">Exporter</text>
+<rect class="acc" x="488" y="334" width="124" height="30" rx="6"/><text class="w" x="500" y="353">+ Ajouter un risque</text>
+</svg>
+      <figcaption><span class="tag2">Gestion des risques · marque blanche</span><h3>Reprendre une application en échec et la rendre vendable</h3>
+        <p>Outil de cartographie des risques : registre, heatmaps, radars, plans d'action et fiches risques. J'ai repris une version laissée inaboutie par un prestataire externe, réécrit et restructuré une grande partie des composants, puis piloté les évolutions avec le Product Manager.</p>
+        <p class="res">En production et commercialisé par PwC auprès de ses clients, en marque blanche.</p>
+        <p>WeWeb · Supabase · Chart.js</p></figcaption>
+    </figure>
+    <figure class="wfig"><svg class="wf" viewBox="0 0 640 400" role="img" aria-label="Wireframe d'une application RH d'accueil des arrivants : capacité de session, liste des arrivants avec contrôles en alerte et fiche de contrôles">
+<rect class="bg" width="640" height="400"/>
+<rect class="card" x="12" y="12" width="616" height="44" rx="8"/>
+<text class="t" x="28" y="39">Liste des arrivants</text>
+<rect class="stroke" x="170" y="22" width="150" height="24" rx="6"/><text x="182" y="38">Rechercher…</text>
+<rect class="stroke" x="330" y="22" width="150" height="24" rx="6"/><text x="342" y="38">Session du 01/09</text>
+<rect class="stroke" x="490" y="22" width="122" height="24" rx="6"/><text x="502" y="38">Préférences et filtres</text>
+<rect class="card" x="12" y="64" width="616" height="62" rx="8"/>
+<text class="t" x="28" y="88">Capacité de la session</text><text x="200" y="88">72 arrivants · 120 places</text>
+<rect class="ln" x="28" y="102" width="330" height="8" rx="4"/><rect class="acc" x="28" y="102" width="198" height="8" rx="4"/>
+<rect class="acc" x="380" y="80" width="112" height="30" rx="6"/><text class="w" x="436" y="99" text-anchor="middle">Convocations</text>
+<rect class="stroke" x="500" y="80" width="112" height="30" rx="6" style="stroke:var(--accent)"/><text x="556" y="99" text-anchor="middle" style="fill:var(--accent)">Mail aux tuteurs</text>
+<rect class="card" x="12" y="134" width="380" height="254" rx="8"/>
+<text x="26" y="158" style="fill:var(--ink);font-weight:600">Arrivant</text><text x="120" y="158" style="fill:var(--ink);font-weight:600">Grade</text><text x="208" y="158" style="fill:var(--ink);font-weight:600">Site</text><text x="280" y="158" style="fill:var(--ink);font-weight:600">Contrôles</text>
+<rect class="ln" x="26" y="176" width="70" height="8" rx="4"/><rect class="ln" x="120" y="176" width="60" height="8" rx="4"/><rect class="ln" x="208" y="176" width="48" height="8" rx="4"/><circle cx="300" cy="180" r="9" style="fill:none;stroke:#c0392b;stroke-width:1.5"/><text x="296" y="184" style="fill:#c0392b;font-weight:600">2</text><text x="326" y="184" style="fill:var(--ink)">Fiche ›</text><rect class="ln" x="26" y="210" width="58" height="8" rx="4"/><rect class="ln" x="120" y="210" width="70" height="8" rx="4"/><rect class="ln" x="208" y="210" width="48" height="8" rx="4"/><circle cx="300" cy="214" r="9" style="fill:#e3f4e1"/><text x="295" y="218" style="fill:#2e7d32;font-weight:600">✓</text><text x="326" y="218" style="fill:var(--ink)">Fiche ›</text><rect class="ln" x="26" y="244" width="76" height="8" rx="4"/><rect class="ln" x="120" y="244" width="52" height="8" rx="4"/><rect class="ln" x="208" y="244" width="48" height="8" rx="4"/><circle cx="300" cy="248" r="9" style="fill:none;stroke:#c0392b;stroke-width:1.5"/><text x="296" y="252" style="fill:#c0392b;font-weight:600">3</text><text x="326" y="252" style="fill:var(--ink)">Fiche ›</text><rect class="ln" x="26" y="278" width="64" height="8" rx="4"/><rect class="ln" x="120" y="278" width="66" height="8" rx="4"/><rect class="ln" x="208" y="278" width="48" height="8" rx="4"/><circle cx="300" cy="282" r="9" style="fill:none;stroke:#c0392b;stroke-width:1.5"/><text x="296" y="286" style="fill:#c0392b;font-weight:600">1</text><text x="326" y="286" style="fill:var(--ink)">Fiche ›</text><rect class="ln" x="26" y="312" width="52" height="8" rx="4"/><rect class="ln" x="120" y="312" width="58" height="8" rx="4"/><rect class="ln" x="208" y="312" width="48" height="8" rx="4"/><circle cx="300" cy="316" r="9" style="fill:#e3f4e1"/><text x="295" y="320" style="fill:#2e7d32;font-weight:600">✓</text><text x="326" y="320" style="fill:var(--ink)">Fiche ›</text><rect class="ln" x="26" y="346" width="72" height="8" rx="4"/><rect class="ln" x="120" y="346" width="62" height="8" rx="4"/><rect class="ln" x="208" y="346" width="48" height="8" rx="4"/><circle cx="300" cy="350" r="9" style="fill:none;stroke:#c0392b;stroke-width:1.5"/><text x="296" y="354" style="fill:#c0392b;font-weight:600">4</text><text x="326" y="354" style="fill:var(--ink)">Fiche ›</text>
+<rect class="card" x="402" y="134" width="226" height="254" rx="8"/>
+<text x="418" y="158">Infos</text><text x="458" y="158">Session</text><text x="510" y="158" style="fill:var(--accent);font-weight:600">Contrôles</text><rect class="acc" x="510" y="164" width="54" height="2.5"/><text x="574" y="158">Notes</text>
+<text x="418" y="196" style="fill:var(--ink)">Email</text><rect x="526.8" y="181" width="85.19999999999999" height="22" rx="11" style="fill:#e3f4e1"/><text x="535.8" y="196" style="fill:#2e7d32;font-weight:600">✓ Pro défini</text><text x="418" y="228" style="fill:var(--ink)">Tuteur</text><rect x="549.2" y="213" width="62.8" height="22" rx="11" style="fill:#e3f4e1"/><text x="558.2" y="228" style="fill:#2e7d32;font-weight:600">✓ Validé</text><text x="418" y="260" style="fill:var(--ink)">Ordinateur</text><rect x="504.4" y="245" width="107.6" height="22" rx="11" style="fill:#fbe3df"/><text x="513.4" y="260" style="fill:#c0392b;font-weight:600">✕ Non disponible</text><text x="418" y="292" style="fill:var(--ink)">Téléphone</text><rect x="538.0" y="277" width="74.0" height="22" rx="11" style="fill:#fbe3df"/><text x="547.0" y="292" style="fill:#c0392b;font-weight:600">✕ En cours</text><text x="418" y="324" style="fill:var(--ink)">Badge</text><rect x="526.8" y="309" width="85.19999999999999" height="22" rx="11" style="fill:#e3f4e1"/><text x="535.8" y="324" style="fill:#2e7d32;font-weight:600">✓ Disponible</text><text x="418" y="356" style="fill:var(--ink)">Émargement</text><rect x="532.4" y="341" width="79.6" height="22" rx="11" style="fill:#fbe3df"/><text x="541.4" y="356" style="fill:#c0392b;font-weight:600">✕ Non saisi</text>
+</svg>
+      <figcaption><span class="tag2">RH · développé de bout en bout</span><h3>Remplacer des fichiers Excel et des automatisations éparses par un seul outil</h3>
+        <p>Avant, les RH géraient les arrivées entre des fichiers Excel et des automatisations montées par chaque service, sans coordination. J'ai développé l'application de bout en bout : sessions d'intégration jusqu'à 120 places, attribution et validation des tuteurs, contrôles par arrivant (mail, matériel, badge, émargement), envois groupés des convocations.</p>
+        <p>J'ai conçu le modèle de données (vues, fonctions, triggers), écrit la surcouche d'envoi des mails en Python, et mis en place les flux de données avec les systèmes internes, en coordonnant chaque service concerné. Point avec les RH toutes les deux semaines.</p>
+        <p class="res">En production depuis avril 2025, utilisée chaque jour par une dizaine de personnes (RH et équipes internes, avec des droits par équipe).</p>
+        <p>WeWeb · Supabase · Python · Kubernetes</p></figcaption>
+    </figure>
+    <figure class="wfig"><svg class="wf" viewBox="0 0 640 400" role="img" aria-label="Wireframe d'un design system : catégories de composants, variantes de boutons et champs">
+<rect class="bg" width="640" height="400"/>
+<rect class="card" x="12" y="12" width="150" height="376" rx="8"/>
+<text class="t" x="28" y="40">Composants</text>
+<rect class="accs" x="22" y="54" width="130" height="26" rx="6"/><text x="34" y="71" style="fill:var(--accent);font-weight:600">Boutons</text>
+<text x="34" y="101">Champs</text><text x="34" y="129">Échelles</text><text x="34" y="157">Menus</text><text x="34" y="185">Texte</text><text x="34" y="213">Connexion</text><text x="34" y="241">Téléversement</text>
+<rect class="card" x="174" y="12" width="454" height="200" rx="8"/>
+<text class="t" x="192" y="40">Bouton</text><text x="192" y="58">Variantes × états · lecture seule, désactivé, tailles S / M / L</text>
+<text x="192" y="86">Principal</text><text x="308" y="86">Secondaire</text><text x="424" y="86">Contour</text><text x="530" y="86">Désactivé</text>
+<rect class="acc" x="192" y="96" width="96" height="30" rx="6"/><text class="w" x="214" y="115">Valider</text>
+<rect class="ink" x="308" y="96" width="96" height="30" rx="6"/><text class="w" x="330" y="115">Valider</text>
+<rect class="stroke" x="424" y="96" width="92" height="30" rx="6" style="stroke:var(--accent)"/><text x="446" y="115" style="fill:var(--accent)">Valider</text>
+<rect class="ln" x="530" y="96" width="84" height="30" rx="6"/><text x="548" y="115">Valider</text>
+<rect class="acc" x="192" y="140" width="74" height="22" rx="5"/><rect class="ink" x="308" y="140" width="74" height="22" rx="5"/><rect class="stroke" x="424" y="140" width="70" height="22" rx="5" style="stroke:var(--accent)"/><rect class="ln" x="530" y="140" width="64" height="22" rx="5"/>
+<rect class="acc" x="192" y="174" width="54" height="16" rx="4"/><rect class="ink" x="308" y="174" width="54" height="16" rx="4"/><rect class="stroke" x="424" y="174" width="50" height="16" rx="4" style="stroke:var(--accent)"/><rect class="ln" x="530" y="174" width="46" height="16" rx="4"/>
+<rect class="card" x="174" y="222" width="222" height="166" rx="8"/>
+<text class="t" x="192" y="248">Champ de recherche</text>
+<rect class="stroke" x="192" y="262" width="186" height="30" rx="6"/><circle cx="208" cy="277" r="6" class="stroke" style="stroke:var(--muted)"/><text x="222" y="281">Rechercher…</text>
+<rect class="stroke" x="192" y="302" width="186" height="30" rx="6" style="stroke:var(--accent)"/><text x="204" y="321" style="fill:var(--ink)">Valeur saisie</text>
+<rect class="stroke" x="192" y="342" width="186" height="30" rx="6" style="stroke:#e56a5c"/><text x="204" y="361" style="fill:#c0392b">Champ obligatoire</text>
+<rect class="card" x="406" y="222" width="222" height="166" rx="8"/>
+<text class="t" x="424" y="248">Puces</text>
+<rect class="acc" x="424" y="262" width="58" height="24" rx="12"/><text class="w" x="436" y="278">Actif</text>
+<rect class="accs" x="490" y="262" width="62" height="24" rx="12"/><text x="502" y="278" style="fill:var(--accent)">Filtre</text>
+<rect class="stroke" x="560" y="262" width="54" height="24" rx="12"/><text x="570" y="278">Vide</text>
+<text x="424" y="316">Thème clair et sombre</text>
+<rect class="ln" x="424" y="326" width="90" height="46" rx="6"/><rect class="ink" x="522" y="326" width="90" height="46" rx="6"/>
+</svg>
+      <figcaption><span class="tag2">Design system</span><h3>Donner un socle commun à toute l'équipe</h3>
+        <p>Bibliothèque de composants configurables (variantes, tailles, états, thèmes), synchronisée avec Figma et importable dans chaque projet. Projet lancé à mon initiative ; j'ai rédigé plus de 90 % de la documentation et accompagné les autres développeurs.</p>
+        <p class="res">Utilisé dans tous les projets de l'équipe, salué par le lead developer et le N+2.</p>
+        <p>WeWeb · Figma</p></figcaption>
+    </figure>
+    <figure class="wfig"><svg class="wf" viewBox="0 0 640 400" role="img" aria-label="Wireframe d'un générateur de propositions commerciales en six étapes">
+<rect class="bg" width="640" height="400"/>
+<rect class="card" x="12" y="12" width="616" height="44" rx="8"/>
+<circle class="acc" cx="40" cy="34" r="11"/><text class="w" x="36" y="38">1</text><text x="58" y="38" style="fill:var(--ink);font-weight:600">Sources</text>
+<rect class="ln" x="112" y="33" width="22" height="2"/><text x="142" y="38">2 Inspirations</text><rect class="ln" x="222" y="33" width="22" height="2"/><text x="252" y="38">3 Sections</text>
+<rect class="ln" x="314" y="33" width="22" height="2"/><text x="344" y="38">4 Modèles</text><rect class="ln" x="404" y="33" width="22" height="2"/><text x="434" y="38">5 Pages</text><rect class="ln" x="482" y="33" width="22" height="2"/><text x="512" y="38">6 Dossier final</text>
+<text class="t" x="320" y="88" text-anchor="middle" style="font-size:16px">Source de l'appel d'offres</text>
+<text x="320" y="106" text-anchor="middle">Déposez le cahier des charges ou décrivez le besoin</text>
+<rect class="card" x="40" y="122" width="270" height="130" rx="10"/>
+<text class="t" x="58" y="146">Cahier des charges</text>
+<rect class="dash" x="58" y="158" width="234" height="80" rx="8"/><circle class="ink" cx="175" cy="186" r="11"/><text x="175" y="222" text-anchor="middle">Déposer un fichier .docx</text>
+<rect class="card" x="330" y="122" width="270" height="130" rx="10"/>
+<text class="t" x="348" y="146">Description du besoin</text>
+<rect class="stroke" x="348" y="158" width="234" height="80" rx="6"/><rect class="ln" x="360" y="172" width="160" height="7" rx="3"/><rect class="ln" x="360" y="186" width="190" height="7" rx="3"/><rect class="ln" x="360" y="200" width="120" height="7" rx="3"/>
+<rect class="card" x="40" y="266" width="560" height="120" rx="10"/>
+<text class="t" x="58" y="290">Sections générées par l'IA</text>
+<rect class="accs" x="58" y="302" width="250" height="34" rx="6"/><text x="70" y="323" style="fill:var(--ink)">Contexte et enjeux du client</text><text x="268" y="323" style="fill:var(--accent);font-weight:600">✓</text>
+<rect class="accs" x="324" y="302" width="258" height="34" rx="6"/><text x="336" y="323" style="fill:var(--ink)">Approche proposée</text><text x="540" y="323" style="fill:var(--accent);font-weight:600">✓</text>
+<rect class="stroke" x="58" y="344" width="250" height="30" rx="6"/><text x="70" y="363">Équipe et références similaires</text>
+<rect class="acc" x="418" y="344" width="164" height="30" rx="6"/><text class="w" x="500" y="363" text-anchor="middle">Générer le PowerPoint</text>
+</svg>
+      <figcaption><span class="tag2">IA générative · avant-vente</span><h3>Répondre plus vite aux appels d'offres</h3>
+        <p>Générateur de propositions commerciales en six étapes : dépôt du cahier des charges, propositions similaires retrouvées par l'IA, génération section par section, export PowerPoint. J'ai conçu le parcours et développé toute l'interface, en binôme avec le développeur back.</p>
+        <p class="res">Un gain de temps net pour les consultants et des livrables plus homogènes.</p>
+        <p>WeWeb · API Python / FastAPI · services d'IA</p></figcaption>
+    </figure>
+    <div class="plist">
+      <div><b>Recherche sémantique de propositions</b><span>Retrouver les propositions passées de la firme à partir d'un besoin ; intégrée ensuite à un assistant plus large.</span></div>
+      <div><b>Gestion des contentieux</b><span>Dossiers, avocats, audiences, agenda et suivi financier, conçu sans maquette avec le lead dev.</span></div>
+      <div><b>Évaluation RSE (CSRD)</b><span>Parcours guidé pour qualifier impacts, risques et opportunités selon les normes ESRS.</span></div>
+      <div><b>Diagnostic de parc informatique</b><span>Tableau de bord de l'état des postes, avec un modèle de données conçu dans Supabase.</span></div>
+    </div>
+    <p class="wnote">Écrans redessinés en wireframes : les originaux sont des outils internes, non publics.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead">
+    <span class="eyebrow">Aussi</span>
+    <h2>Enseignement, sites et missions courtes</h2>
+    <p>Des missions plus courtes ou en parallèle, qui complètent les projets ci-dessus.</p>
+  </div>
+  <div class="earlier">
+    <div class="mini">
+      <span class="when">Depuis juillet 2026</span>
+      <h3>ENAC · École nationale de l'aviation civile</h3>
+      <p>Cours d'informatique en école d'ingénieurs : développement web, Node.js, Python, introduction à l'algorithmique et programmation bas niveau en C.</p>
+      <span class="stack">Node.js · Python · C · Web</span>
+    </div>
+    <div class="mini">
+      <span class="when">Depuis 2022 · NoCode Focus</span>
+      <h3>Sites vitrines et outillage de petites structures</h3>
+      <p>Sites vitrines livrés à des clients indépendants et TPE, de la maquette à la mise en ligne. Pour Endophyte (2023) : site web, mise en place de Google Workspace et accompagnement sur l'ensemble du système d'information.</p>
+      <span class="stack">Sites vitrines · Google Workspace · No-code</span>
+    </div>
+    <div class="mini">
+      <span class="when">Oct. 2018 à févr. 2019</span>
+      <h3>ADREC · formation DWWM</h3>
+      <p>Formation d'un groupe de stagiaires en reconversion au développement web, sur un programme de quatre mois en PHP et Symfony.</p>
+      <span class="stack">PHP · Symfony</span>
+    </div>
+    <div class="mini">
+      <span class="when">2016 à 2022 · associatif</span>
+      <h3>Le Séquenceur, Lyon · co-fondateur</h3>
+      <p>Six ans à co-piloter une association d'art numérique sonore : ateliers et événements publics, organisation interne, migration de la gestion vers Notion et automatisations Make.</p>
+      <span class="stack">Pilotage associatif · Notion · Make</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sechead">
     <span class="eyebrow">Avant 2019</span>
     <h2>Les bases : ESN, R&amp;D et éditeur SaaS</h2>
     <p>Quatre années de développement en régie et en produit, qui me donnent aujourd'hui la lecture technique des sujets que je pilote.</p>
@@ -465,23 +648,6 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
 
 <section>
   <div class="sechead">
-    <span class="eyebrow">Parcours</span>
-    <h2>Douze ans en un coup d'œil</h2>
-    <p>Depuis 2022, NoCode Focus porte toutes mes missions : PwC, La Bastide, Alfie Formation et le CAFOC s'y ajoutent en indépendant, parfois en parallèle.</p>
-  </div>
-  <div class="gantt-wrap">
-    <div class="gantt" role="img" aria-label="Frise chronologique du parcours de 2014 à 2026">
-      <div class="gt-row gt-axis"><div class="gt-lbl"></div><div class="gt-track"><span class="yr" style="left:0.0%">2014</span><span class="yr" style="left:7.692%">2015</span><span class="yr" style="left:15.385%">2016</span><span class="yr" style="left:23.077%">2017</span><span class="yr" style="left:30.769%">2018</span><span class="yr" style="left:38.462%">2019</span><span class="yr" style="left:46.154%">2020</span><span class="yr" style="left:53.846%">2021</span><span class="yr" style="left:61.538%">2022</span><span class="yr" style="left:69.231%">2023</span><span class="yr" style="left:76.923%">2024</span><span class="yr" style="left:84.615%">2025</span><span class="yr" style="left:92.308%">2026</span></div></div>
-      <div class="gt-group"><b>Indépendant</b> <span>Missions menées en freelance, sous NoCode Focus depuis 2022</span></div><div class="gt-row main"><div class="gt-lbl"><span class="n">Développeur et formateur indépendant</span><span class="d">juil. 2018 → déc. 2019</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:34.615%;width:11.539%" title="Développeur et formateur indépendant · juil. 2018 → déc. 2019"></span></div></div><div class="gt-row sub"><div class="gt-lbl"><span class="n">ADREC · formation DWWM</span><span class="d">oct. 2018 → févr. 2019</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:36.538%;width:3.206%" title="ADREC · formation DWWM · oct. 2018 → févr. 2019"></span></div></div><div class="gt-row main"><div class="gt-lbl"><span class="n">NoCode Focus · fondateur</span><span class="d">oct. 2022 → aujourd'hui</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar open" style="left:67.308%;width:30.769%" title="NoCode Focus · fondateur · oct. 2022 → aujourd'hui"></span></div></div><div class="gt-row sub"><div class="gt-lbl"><span class="n">PwC France · plateformes internes et Lab IA</span><span class="d">janv. 2024 → oct. 2025</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:76.923%;width:14.103%" title="PwC France · plateformes internes et Lab IA · janv. 2024 → oct. 2025"></span></div></div><div class="gt-row sub"><div class="gt-lbl"><span class="n">La Bastide · coaching technique</span><span class="d">2025 → aujourd'hui</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar open" style="left:84.615%;width:13.462%" title="La Bastide · coaching technique · 2025 → aujourd'hui"></span></div></div><div class="gt-row sub"><div class="gt-lbl"><span class="n">Alfie Formation · formations certifiantes</span><span class="d">nov. 2025 → aujourd'hui</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar open" style="left:91.026%;width:7.051%" title="Alfie Formation · formations certifiantes · nov. 2025 → aujourd'hui"></span></div></div><div class="gt-row sub"><div class="gt-lbl"><span class="n">CAFOC de Dijon · coordination Interreg</span><span class="d">avr. 2026 → aujourd'hui</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar open" style="left:94.231%;width:3.846%" title="CAFOC de Dijon · coordination Interreg · avr. 2026 → aujourd'hui"></span></div></div><div class="gt-group"><b>En entreprise</b> <span>ESN, éditeur SaaS et école de formation</span></div><div class="gt-row emp"><div class="gt-lbl"><span class="n">Alti Relation Clients · CRM</span><span class="d">sept. 2014 → août 2015</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:5.128%;width:7.692%" title="Alti Relation Clients · CRM · sept. 2014 → août 2015"></span></div></div><div class="gt-row emp"><div class="gt-lbl"><span class="n">Extia · missions EDF et KIS</span><span class="d">sept. 2015 → janv. 2017</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:12.821%;width:10.897%" title="Extia · missions EDF et KIS · sept. 2015 → janv. 2017"></span></div></div><div class="gt-row emp"><div class="gt-lbl"><span class="n">DataGalaxy · éditeur SaaS</span><span class="d">févr. 2017 → déc. 2017</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:23.718%;width:7.051%" title="DataGalaxy · éditeur SaaS · févr. 2017 → déc. 2017"></span></div></div><div class="gt-row emp"><div class="gt-lbl"><span class="n">O'Clock · formateur, référent de promo</span><span class="d">déc. 2019 → déc. 2022</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:45.513%;width:23.718%" title="O'Clock · formateur, référent de promo · déc. 2019 → déc. 2022"></span></div></div><div class="gt-group"><b>Associatif</b></div><div class="gt-row asso"><div class="gt-lbl"><span class="n">Le Séquenceur, Lyon · co-fondateur</span><span class="d">nov. 2016 → déc. 2022</span></div><div class="gt-track"><i class="vl" style="left:0.0%"></i><i class="vl" style="left:7.692%"></i><i class="vl" style="left:15.385%"></i><i class="vl" style="left:23.077%"></i><i class="vl" style="left:30.769%"></i><i class="vl" style="left:38.462%"></i><i class="vl" style="left:46.154%"></i><i class="vl" style="left:53.846%"></i><i class="vl" style="left:61.538%"></i><i class="vl" style="left:69.231%"></i><i class="vl" style="left:76.923%"></i><i class="vl" style="left:84.615%"></i><i class="vl" style="left:92.308%"></i><i class="vl" style="left:100.0%"></i><span class="bar" style="left:21.795%;width:47.436%" title="Le Séquenceur, Lyon · co-fondateur · nov. 2016 → déc. 2022"></span></div></div>
-      <div class="gt-row gt-foot"><div class="gt-lbl"></div><div class="gt-track"><span class="now" style="left:98.077%">aujourd'hui</span></div></div>
-      <span class="nowline" style="left:calc(17rem + (100% - 17rem) * 0.98077)"></span>
-    </div>
-  </div>
-  <div class="gt-legend"><span><i class="k main"></i>Activité indépendante</span><span><i class="k sub"></i>Mission en indépendant</span><span><i class="k emp"></i>En entreprise</span><span><i class="k asso"></i>Associatif</span></div>
-</section>
-
-<section>
-  <div class="sechead">
     <span class="eyebrow">Compétences</span>
     <h2>Outils et savoir-faire</h2>
   </div>
@@ -505,7 +671,6 @@ footer{font-size:.82rem;color:var(--muted);text-align:left}
   <div class="links">
     <div><span class="mail" id="mail2">marc.charton.pro@gmail.com</span> <button class="copy" type="button" data-target="mail2">Copier</button></div>
     <a href="https://www.linkedin.com/in/marccharton/" target="_blank" rel="noopener">linkedin.com/in/marccharton</a>
-    <a href="https://github.com/marccharton" target="_blank" rel="noopener">github.com/marccharton</a>
   </div>
 </section>
 
@@ -522,3 +687,5 @@ document.querySelectorAll('.copy').forEach(function(btn){
   });
 });
 </script>
+
+</body></html>
